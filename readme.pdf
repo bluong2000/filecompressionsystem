@@ -1,0 +1,20 @@
+
+
+To use fileCompressor, you must use the following command-line interface:
+
+	./fileCompressor <flag: "-c" or "-d"> <.txt or .hcz file> <codebook>
+
+		or
+
+	./fileCompressor -R <flag: "-c" or "-d"> <directory> <codebook>
+	
+		or 
+
+	./fileCompressor -R -b <directory> 
+
+		or
+	
+	./fileCompressor -b <.txt file> 
+
+
+Each of these commands does what the assignment description states, and the time complexity is about n^2 whenever a buffer is filled, and about n when we are writing to files where n is the size of the file in bytes. When run recursively the run time is n*m where n is the size of the individual files and m is the amount of files in all directories and subdirectories.
